@@ -20,11 +20,39 @@ end
 
 class Main < Sinatra::Base
   
-  #query from database with ChartNO by RESTful, and convert result to JSON for request
-  get '/QueryByChartNO/:uid' do
+  #query from database with AccessionNO by RESTful, and convert result to JSON for request
+  get '/QueryByAccessionNO/:accessionno' do
     begin      
       #get parameter
-      ChartNO=params[:uid]
+      AccessionNO=params[:accessionno]
+      
+      #setup logger
+      @logger=Logger.new("log.txt","daily")
+      
+      #connect to database
+      @db=DBHandle.new(SettingHandle::DBTYPE,SettingHandle::DBIP,SettingHandle::DBID,SettingHandle::DBPW,SettingHandle::DBSID)
+      @logger.info("QueryByAccessionNO #{SettingHandle::DBIP},#{SettingHandle::DBSID} connect ok.")
+      
+      #make user function
+      uh=UserHandle.new(@db)
+      
+      #get result
+      uh.GetExamByAccessionNO(AccessionNO)
+    rescue => e
+      @logger.debug("QueryByAccessionNO has crashed.") if @logger!=nil
+      @logger.debug(e) if @logger!=nil
+      'error'
+    ensure
+      @db.dbh.disconnect() if @db!=nil
+      @logger.info("QueryByAccessionNO closed database.") if @logger!=nil
+    end
+  end
+  
+  #query from database with ChartNO by RESTful, and convert result to JSON for request
+  get '/QueryByChartNO/:chartno' do
+    begin      
+      #get parameter
+      ChartNO=params[:chartno]
       
       #setup logger
       @logger=Logger.new("log.txt","daily")
@@ -37,7 +65,7 @@ class Main < Sinatra::Base
       uh=UserHandle.new(@db)
       
       #get result
-      uh.GetExamByPatient(ChartNO)
+      uh.GetExamByChartNO(ChartNO)
     rescue => e
       @logger.debug("QueryByChartNO has crashed.") if @logger!=nil
       @logger.debug(e) if @logger!=nil
@@ -47,6 +75,76 @@ class Main < Sinatra::Base
       @logger.info("QueryByChartNO closed database.") if @logger!=nil
     end
   end
+  
+  #query from database with Date by RESTful, and convert result to JSON for request
+  get '/QueryByExamDate/:year/:month/:day' do
+    begin      
+      #get parameter
+      year=params[:year]
+      month=params[:month]
+      day=params[:day]
+      ExamDate="#{year}/#{month}/#{day}"
+      
+      #setup logger
+      @logger=Logger.new("log.txt","daily")
+      
+      #connect to database
+      @db=DBHandle.new(SettingHandle::DBTYPE,SettingHandle::DBIP,SettingHandle::DBID,SettingHandle::DBPW,SettingHandle::DBSID)
+      @logger.info("QueryByDate #{SettingHandle::DBIP},#{SettingHandle::DBSID} connect ok.")
+      
+      #make user function
+      uh=UserHandle.new(@db)
+      
+      #get result
+      uh.GetExamByExamDate(ExamDate)
+    rescue => e
+      @logger.debug("QueryByDate has crashed.") if @logger!=nil
+      @logger.debug(e) if @logger!=nil
+      'error'
+    ensure
+      @db.dbh.disconnect() if @db!=nil
+      @logger.info("QueryByDate closed database.") if @logger!=nil
+    end
+  end
+  
+  
+  
+
+   get '/test' do
+     begin      
+       #get parameter
+       ChartNO='2172145'
+       
+       #setup logger
+       @logger=Logger.new("log.txt","daily")
+       
+       #connect to database
+       @db=DBHandle.new(SettingHandle::DBTYPE,SettingHandle::DBIP,SettingHandle::DBID,SettingHandle::DBPW,SettingHandle::DBSID)
+       @logger.info("QueryByChartNO #{SettingHandle::DBIP},#{SettingHandle::DBSID} connect ok.")
+
+       #get result
+       sql="select "
+       sql+="uni_key, "
+       sql+="chartno, "
+       sql+="examdate, "
+       sql+="examdetail "
+       sql+="from "
+       sql+="cris_exam_online "
+       sql+="where "
+       sql+="chartno='#{ChartNO}' "
+       @logger.info(sql)    
+              
+       @db.dbh.select_all(sql).inspect
+     rescue => e
+       @logger.debug("QueryByChartNO has crashed.") if @logger!=nil
+       @logger.debug(e) if @logger!=nil
+       'error'
+     ensure
+       @db.dbh.disconnect() if @db!=nil
+       @logger.info("QueryByChartNO closed database.") if @logger!=nil
+     end
+   end
+   
   
   
   #run sinatra server when this site is unstart

@@ -46,8 +46,26 @@ class UserHandle
     @logger=Logger.new("log.txt","daily")
   end
   
+  #get short exam data by accession number
+  def GetExamByAccessionNO(accessionno)
+    @accessionno=accessionno
+    
+    sql="select "
+    sql+="uni_key, "
+    sql+="chartno, "
+    sql+="examdate, "
+    sql+="examdetail "
+    sql+="from "
+    sql+="cris_exam_online "
+    sql+="where "
+    sql+="uni_key='#{@accessionno}' "
+    @logger.info(sql)    
+           
+    @db.dbh.select_all(sql).to_json
+  end
+  
   #get short exam data by chart number
-  def GetExamByPatient(chartno)
+  def GetExamByChartNO(chartno)
     @chartno=chartno
     
     sql="select "
@@ -59,6 +77,24 @@ class UserHandle
     sql+="cris_exam_online "
     sql+="where "
     sql+="chartno='#{@chartno}' "
+    @logger.info(sql)    
+           
+    @db.dbh.select_all(sql).to_json
+  end
+  
+  #get short exam data by exam date
+  def GetExamByExamDate(examdate)
+    @examdate=examdate
+    
+    sql="select "
+    sql+="uni_key, "
+    sql+="chartno, "
+    sql+="examdate, "
+    sql+="examdetail "
+    sql+="from "
+    sql+="cris_exam_online "
+    sql+="where "
+    sql+="examdate='#{@examdate}' "
     @logger.info(sql)    
            
     @db.dbh.select_all(sql).to_json

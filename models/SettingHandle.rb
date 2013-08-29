@@ -9,7 +9,7 @@ class SettingHandle
   #DBPW='sameway'
   #DBSID='CRIS'
   DBTYPE='ORA'  #MSSQL or DB2 or ORA
-  DBIP='192.168.1.190'
+  DBIP='127.0.0.1'
   DBID='system'
   DBPW='CSMH1'
   DBSID='orcl'
