@@ -1,0 +1,770 @@
+# Logfile created on 2013-08-29 10:39:13 +0800 by logger.rb/31641
+D, [2013-08-29T10:39:13.615780 #1140] DEBUG -- : QueryByChartNO has crashed.
+D, [2013-08-29T10:39:13.618780 #1140] DEBUG -- : ORA-12170: TNS: 發生連線逾時 (DBI::DatabaseError)
+oci8.c:513:in oci8lib_191.so
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/ruby-oci8-2.1.5-x86-mingw32/lib/oci8/oci8.rb:148:in `initialize'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/ruby-oci8-2.1.5-x86-mingw32/lib/dbd/OCI8.rb:182:in `new'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/ruby-oci8-2.1.5-x86-mingw32/lib/dbd/OCI8.rb:182:in `connect'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/dbi-0.4.5/lib/dbi/handles/driver.rb:33:in `connect'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/dbi-0.4.5/lib/dbi.rb:148:in `connect'
+D:/git/SamewayIQServer/models/DBHandle.rb:42:in `initialize'
+D:/git/SamewayIQServer/Main.rb:33:in `new'
+D:/git/SamewayIQServer/Main.rb:33:in `block in <class:Main>'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1541:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1541:in `block in compile!'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:950:in `[]'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:950:in `block (3 levels) in route!'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:966:in `route_eval'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:950:in `block (2 levels) in route!'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:987:in `block in process_route'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:985:in `catch'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:985:in `process_route'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:948:in `block in route!'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:947:in `each'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:947:in `route!'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1059:in `block in dispatch!'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `block in invoke'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `catch'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `invoke'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1056:in `dispatch!'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:882:in `block in call!'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `block in invoke'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `catch'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `invoke'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:882:in `call!'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:870:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-protection-1.5.0/lib/rack/protection/xss_header.rb:18:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-protection-1.5.0/lib/rack/protection/path_traversal.rb:16:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-protection-1.5.0/lib/rack/protection/json_csrf.rb:18:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-protection-1.5.0/lib/rack/protection/base.rb:49:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-protection-1.5.0/lib/rack/protection/base.rb:49:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-protection-1.5.0/lib/rack/protection/frame_options.rb:31:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/nulllogger.rb:9:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/showexceptions.rb:21:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:175:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1949:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1449:in `block in call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1726:in `synchronize'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1449:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/lint.rb:49:in `_call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/lint.rb:37:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/showexceptions.rb:24:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/commonlogger.rb:33:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:212:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/chunked.rb:43:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/thin-1.5.1/lib/thin/connection.rb:81:in `block in pre_process'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/thin-1.5.1/lib/thin/connection.rb:79:in `catch'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/thin-1.5.1/lib/thin/connection.rb:79:in `pre_process'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/thin-1.5.1/lib/thin/connection.rb:54:in `process'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/thin-1.5.1/lib/thin/connection.rb:39:in `receive_data'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/eventmachine-1.0.0-x86-mingw32/lib/eventmachine.rb:187:in `run_machine'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/eventmachine-1.0.0-x86-mingw32/lib/eventmachine.rb:187:in `run'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/thin-1.5.1/lib/thin/backends/base.rb:63:in `start'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/thin-1.5.1/lib/thin/server.rb:159:in `start'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/handler/thin.rb:16:in `run'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/server.rb:264:in `start'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/server.rb:141:in `start'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/bin/rackup:4:in `<top (required)>'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/bin/rackup:23:in `load'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/bin/rackup:23:in `<main>'
+I, [2013-08-29T10:39:13.619780 #1140]  INFO -- : QueryByChartNO closed database.
+D, [2013-08-29T10:39:52.723016 #1140] DEBUG -- : QueryByChartNO has crashed.
+D, [2013-08-29T10:39:52.724016 #1140] DEBUG -- : ORA-12170: TNS: 發生連線逾時 (DBI::DatabaseError)
+oci8.c:513:in oci8lib_191.so
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/ruby-oci8-2.1.5-x86-mingw32/lib/oci8/oci8.rb:148:in `initialize'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/ruby-oci8-2.1.5-x86-mingw32/lib/dbd/OCI8.rb:182:in `new'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/ruby-oci8-2.1.5-x86-mingw32/lib/dbd/OCI8.rb:182:in `connect'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/dbi-0.4.5/lib/dbi/handles/driver.rb:33:in `connect'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/dbi-0.4.5/lib/dbi.rb:148:in `connect'
+D:/git/SamewayIQServer/models/DBHandle.rb:42:in `initialize'
+D:/git/SamewayIQServer/Main.rb:33:in `new'
+D:/git/SamewayIQServer/Main.rb:33:in `block in <class:Main>'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1541:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1541:in `block in compile!'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:950:in `[]'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:950:in `block (3 levels) in route!'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:966:in `route_eval'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:950:in `block (2 levels) in route!'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:987:in `block in process_route'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:985:in `catch'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:985:in `process_route'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:948:in `block in route!'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:947:in `each'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:947:in `route!'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1059:in `block in dispatch!'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `block in invoke'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `catch'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `invoke'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1056:in `dispatch!'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:882:in `block in call!'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `block in invoke'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `catch'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `invoke'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:882:in `call!'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:870:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-protection-1.5.0/lib/rack/protection/xss_header.rb:18:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-protection-1.5.0/lib/rack/protection/path_traversal.rb:16:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-protection-1.5.0/lib/rack/protection/json_csrf.rb:18:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-protection-1.5.0/lib/rack/protection/base.rb:49:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-protection-1.5.0/lib/rack/protection/base.rb:49:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-protection-1.5.0/lib/rack/protection/frame_options.rb:31:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/nulllogger.rb:9:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/showexceptions.rb:21:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:175:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1949:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1449:in `block in call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1726:in `synchronize'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1449:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/lint.rb:49:in `_call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/lint.rb:37:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/showexceptions.rb:24:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/commonlogger.rb:33:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:212:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/chunked.rb:43:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/thin-1.5.1/lib/thin/connection.rb:81:in `block in pre_process'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/thin-1.5.1/lib/thin/connection.rb:79:in `catch'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/thin-1.5.1/lib/thin/connection.rb:79:in `pre_process'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/thin-1.5.1/lib/thin/connection.rb:54:in `process'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/thin-1.5.1/lib/thin/connection.rb:39:in `receive_data'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/eventmachine-1.0.0-x86-mingw32/lib/eventmachine.rb:187:in `run_machine'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/eventmachine-1.0.0-x86-mingw32/lib/eventmachine.rb:187:in `run'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/thin-1.5.1/lib/thin/backends/base.rb:63:in `start'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/thin-1.5.1/lib/thin/server.rb:159:in `start'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/handler/thin.rb:16:in `run'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/server.rb:264:in `start'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/server.rb:141:in `start'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/bin/rackup:4:in `<top (required)>'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/bin/rackup:23:in `load'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/bin/rackup:23:in `<main>'
+I, [2013-08-29T10:39:52.724016 #1140]  INFO -- : QueryByChartNO closed database.
+D, [2013-08-29T10:40:30.231162 #1140] DEBUG -- : QueryByChartNO has crashed.
+D, [2013-08-29T10:40:30.232162 #1140] DEBUG -- : ORA-12170: TNS: 發生連線逾時 (DBI::DatabaseError)
+oci8.c:513:in oci8lib_191.so
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/ruby-oci8-2.1.5-x86-mingw32/lib/oci8/oci8.rb:148:in `initialize'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/ruby-oci8-2.1.5-x86-mingw32/lib/dbd/OCI8.rb:182:in `new'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/ruby-oci8-2.1.5-x86-mingw32/lib/dbd/OCI8.rb:182:in `connect'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/dbi-0.4.5/lib/dbi/handles/driver.rb:33:in `connect'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/dbi-0.4.5/lib/dbi.rb:148:in `connect'
+D:/git/SamewayIQServer/models/DBHandle.rb:42:in `initialize'
+D:/git/SamewayIQServer/Main.rb:33:in `new'
+D:/git/SamewayIQServer/Main.rb:33:in `block in <class:Main>'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1541:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1541:in `block in compile!'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:950:in `[]'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:950:in `block (3 levels) in route!'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:966:in `route_eval'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:950:in `block (2 levels) in route!'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:987:in `block in process_route'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:985:in `catch'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:985:in `process_route'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:948:in `block in route!'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:947:in `each'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:947:in `route!'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1059:in `block in dispatch!'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `block in invoke'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `catch'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `invoke'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1056:in `dispatch!'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:882:in `block in call!'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `block in invoke'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `catch'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `invoke'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:882:in `call!'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:870:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-protection-1.5.0/lib/rack/protection/xss_header.rb:18:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-protection-1.5.0/lib/rack/protection/path_traversal.rb:16:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-protection-1.5.0/lib/rack/protection/json_csrf.rb:18:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-protection-1.5.0/lib/rack/protection/base.rb:49:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-protection-1.5.0/lib/rack/protection/base.rb:49:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-protection-1.5.0/lib/rack/protection/frame_options.rb:31:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/nulllogger.rb:9:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/showexceptions.rb:21:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:175:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1949:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1449:in `block in call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1726:in `synchronize'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1449:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/lint.rb:49:in `_call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/lint.rb:37:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/showexceptions.rb:24:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/commonlogger.rb:33:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:212:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/chunked.rb:43:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/thin-1.5.1/lib/thin/connection.rb:81:in `block in pre_process'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/thin-1.5.1/lib/thin/connection.rb:79:in `catch'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/thin-1.5.1/lib/thin/connection.rb:79:in `pre_process'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/thin-1.5.1/lib/thin/connection.rb:54:in `process'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/thin-1.5.1/lib/thin/connection.rb:39:in `receive_data'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/eventmachine-1.0.0-x86-mingw32/lib/eventmachine.rb:187:in `run_machine'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/eventmachine-1.0.0-x86-mingw32/lib/eventmachine.rb:187:in `run'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/thin-1.5.1/lib/thin/backends/base.rb:63:in `start'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/thin-1.5.1/lib/thin/server.rb:159:in `start'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/handler/thin.rb:16:in `run'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/server.rb:264:in `start'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/server.rb:141:in `start'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/bin/rackup:4:in `<top (required)>'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/bin/rackup:23:in `load'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/bin/rackup:23:in `<main>'
+I, [2013-08-29T10:40:30.232162 #1140]  INFO -- : QueryByChartNO closed database.
+D, [2013-08-29T10:40:38.608641 #8072] DEBUG -- : QueryByChartNO has crashed.
+D, [2013-08-29T10:40:38.608641 #8072] DEBUG -- : ORA-12505: TNS: 監聽器目前不知道連線描述區中指定的 SID (DBI::DatabaseError)
+oci8.c:513:in oci8lib_191.so
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/ruby-oci8-2.1.5-x86-mingw32/lib/oci8/oci8.rb:148:in `initialize'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/ruby-oci8-2.1.5-x86-mingw32/lib/dbd/OCI8.rb:182:in `new'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/ruby-oci8-2.1.5-x86-mingw32/lib/dbd/OCI8.rb:182:in `connect'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/dbi-0.4.5/lib/dbi/handles/driver.rb:33:in `connect'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/dbi-0.4.5/lib/dbi.rb:148:in `connect'
+D:/git/SamewayIQServer/models/DBHandle.rb:42:in `initialize'
+D:/git/SamewayIQServer/Main.rb:33:in `new'
+D:/git/SamewayIQServer/Main.rb:33:in `block in <class:Main>'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1541:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1541:in `block in compile!'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:950:in `[]'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:950:in `block (3 levels) in route!'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:966:in `route_eval'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:950:in `block (2 levels) in route!'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:987:in `block in process_route'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:985:in `catch'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:985:in `process_route'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:948:in `block in route!'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:947:in `each'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:947:in `route!'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1059:in `block in dispatch!'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `block in invoke'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `catch'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `invoke'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1056:in `dispatch!'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:882:in `block in call!'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `block in invoke'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `catch'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `invoke'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:882:in `call!'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:870:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-protection-1.5.0/lib/rack/protection/xss_header.rb:18:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-protection-1.5.0/lib/rack/protection/path_traversal.rb:16:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-protection-1.5.0/lib/rack/protection/json_csrf.rb:18:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-protection-1.5.0/lib/rack/protection/base.rb:49:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-protection-1.5.0/lib/rack/protection/base.rb:49:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-protection-1.5.0/lib/rack/protection/frame_options.rb:31:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/nulllogger.rb:9:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/showexceptions.rb:21:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:175:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1949:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1449:in `block in call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1726:in `synchronize'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1449:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/lint.rb:49:in `_call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/lint.rb:37:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/showexceptions.rb:24:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/commonlogger.rb:33:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:212:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/chunked.rb:43:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/thin-1.5.1/lib/thin/connection.rb:81:in `block in pre_process'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/thin-1.5.1/lib/thin/connection.rb:79:in `catch'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/thin-1.5.1/lib/thin/connection.rb:79:in `pre_process'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/thin-1.5.1/lib/thin/connection.rb:54:in `process'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/thin-1.5.1/lib/thin/connection.rb:39:in `receive_data'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/eventmachine-1.0.0-x86-mingw32/lib/eventmachine.rb:187:in `run_machine'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/eventmachine-1.0.0-x86-mingw32/lib/eventmachine.rb:187:in `run'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/thin-1.5.1/lib/thin/backends/base.rb:63:in `start'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/thin-1.5.1/lib/thin/server.rb:159:in `start'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/handler/thin.rb:16:in `run'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/server.rb:264:in `start'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/server.rb:141:in `start'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/bin/rackup:4:in `<top (required)>'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/bin/rackup:23:in `load'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/bin/rackup:23:in `<main>'
+I, [2013-08-29T10:40:38.609641 #8072]  INFO -- : QueryByChartNO closed database.
+D, [2013-08-29T10:40:44.857998 #8072] DEBUG -- : QueryByChartNO has crashed.
+D, [2013-08-29T10:40:44.857998 #8072] DEBUG -- : ORA-12505: TNS: 監聽器目前不知道連線描述區中指定的 SID (DBI::DatabaseError)
+oci8.c:513:in oci8lib_191.so
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/ruby-oci8-2.1.5-x86-mingw32/lib/oci8/oci8.rb:148:in `initialize'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/ruby-oci8-2.1.5-x86-mingw32/lib/dbd/OCI8.rb:182:in `new'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/ruby-oci8-2.1.5-x86-mingw32/lib/dbd/OCI8.rb:182:in `connect'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/dbi-0.4.5/lib/dbi/handles/driver.rb:33:in `connect'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/dbi-0.4.5/lib/dbi.rb:148:in `connect'
+D:/git/SamewayIQServer/models/DBHandle.rb:42:in `initialize'
+D:/git/SamewayIQServer/Main.rb:33:in `new'
+D:/git/SamewayIQServer/Main.rb:33:in `block in <class:Main>'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1541:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1541:in `block in compile!'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:950:in `[]'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:950:in `block (3 levels) in route!'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:966:in `route_eval'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:950:in `block (2 levels) in route!'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:987:in `block in process_route'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:985:in `catch'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:985:in `process_route'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:948:in `block in route!'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:947:in `each'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:947:in `route!'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1059:in `block in dispatch!'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `block in invoke'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `catch'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `invoke'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1056:in `dispatch!'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:882:in `block in call!'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `block in invoke'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `catch'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `invoke'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:882:in `call!'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:870:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-protection-1.5.0/lib/rack/protection/xss_header.rb:18:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-protection-1.5.0/lib/rack/protection/path_traversal.rb:16:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-protection-1.5.0/lib/rack/protection/json_csrf.rb:18:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-protection-1.5.0/lib/rack/protection/base.rb:49:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-protection-1.5.0/lib/rack/protection/base.rb:49:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-protection-1.5.0/lib/rack/protection/frame_options.rb:31:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/nulllogger.rb:9:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/showexceptions.rb:21:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:175:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1949:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1449:in `block in call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1726:in `synchronize'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1449:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/lint.rb:49:in `_call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/lint.rb:37:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/showexceptions.rb:24:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/commonlogger.rb:33:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:212:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/chunked.rb:43:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/thin-1.5.1/lib/thin/connection.rb:81:in `block in pre_process'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/thin-1.5.1/lib/thin/connection.rb:79:in `catch'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/thin-1.5.1/lib/thin/connection.rb:79:in `pre_process'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/thin-1.5.1/lib/thin/connection.rb:54:in `process'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/thin-1.5.1/lib/thin/connection.rb:39:in `receive_data'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/eventmachine-1.0.0-x86-mingw32/lib/eventmachine.rb:187:in `run_machine'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/eventmachine-1.0.0-x86-mingw32/lib/eventmachine.rb:187:in `run'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/thin-1.5.1/lib/thin/backends/base.rb:63:in `start'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/thin-1.5.1/lib/thin/server.rb:159:in `start'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/handler/thin.rb:16:in `run'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/server.rb:264:in `start'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/server.rb:141:in `start'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/bin/rackup:4:in `<top (required)>'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/bin/rackup:23:in `load'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/bin/rackup:23:in `<main>'
+I, [2013-08-29T10:40:44.857998 #8072]  INFO -- : QueryByChartNO closed database.
+D, [2013-08-29T10:40:49.997292 #8072] DEBUG -- : QueryByChartNO has crashed.
+D, [2013-08-29T10:40:49.997292 #8072] DEBUG -- : ORA-12505: TNS: 監聽器目前不知道連線描述區中指定的 SID (DBI::DatabaseError)
+oci8.c:513:in oci8lib_191.so
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/ruby-oci8-2.1.5-x86-mingw32/lib/oci8/oci8.rb:148:in `initialize'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/ruby-oci8-2.1.5-x86-mingw32/lib/dbd/OCI8.rb:182:in `new'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/ruby-oci8-2.1.5-x86-mingw32/lib/dbd/OCI8.rb:182:in `connect'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/dbi-0.4.5/lib/dbi/handles/driver.rb:33:in `connect'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/dbi-0.4.5/lib/dbi.rb:148:in `connect'
+D:/git/SamewayIQServer/models/DBHandle.rb:42:in `initialize'
+D:/git/SamewayIQServer/Main.rb:33:in `new'
+D:/git/SamewayIQServer/Main.rb:33:in `block in <class:Main>'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1541:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1541:in `block in compile!'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:950:in `[]'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:950:in `block (3 levels) in route!'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:966:in `route_eval'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:950:in `block (2 levels) in route!'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:987:in `block in process_route'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:985:in `catch'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:985:in `process_route'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:948:in `block in route!'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:947:in `each'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:947:in `route!'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1059:in `block in dispatch!'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `block in invoke'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `catch'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `invoke'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1056:in `dispatch!'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:882:in `block in call!'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `block in invoke'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `catch'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `invoke'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:882:in `call!'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:870:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-protection-1.5.0/lib/rack/protection/xss_header.rb:18:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-protection-1.5.0/lib/rack/protection/path_traversal.rb:16:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-protection-1.5.0/lib/rack/protection/json_csrf.rb:18:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-protection-1.5.0/lib/rack/protection/base.rb:49:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-protection-1.5.0/lib/rack/protection/base.rb:49:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-protection-1.5.0/lib/rack/protection/frame_options.rb:31:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/nulllogger.rb:9:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/showexceptions.rb:21:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:175:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1949:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1449:in `block in call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1726:in `synchronize'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1449:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/lint.rb:49:in `_call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/lint.rb:37:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/showexceptions.rb:24:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/commonlogger.rb:33:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:212:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/chunked.rb:43:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/thin-1.5.1/lib/thin/connection.rb:81:in `block in pre_process'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/thin-1.5.1/lib/thin/connection.rb:79:in `catch'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/thin-1.5.1/lib/thin/connection.rb:79:in `pre_process'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/thin-1.5.1/lib/thin/connection.rb:54:in `process'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/thin-1.5.1/lib/thin/connection.rb:39:in `receive_data'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/eventmachine-1.0.0-x86-mingw32/lib/eventmachine.rb:187:in `run_machine'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/eventmachine-1.0.0-x86-mingw32/lib/eventmachine.rb:187:in `run'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/thin-1.5.1/lib/thin/backends/base.rb:63:in `start'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/thin-1.5.1/lib/thin/server.rb:159:in `start'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/handler/thin.rb:16:in `run'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/server.rb:264:in `start'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/server.rb:141:in `start'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/bin/rackup:4:in `<top (required)>'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/bin/rackup:23:in `load'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/bin/rackup:23:in `<main>'
+I, [2013-08-29T10:40:49.997292 #8072]  INFO -- : QueryByChartNO closed database.
+I, [2013-08-29T10:42:42.281715 #7620]  INFO -- : QueryByChartNO 127.0.0.1,orcl connect ok.
+I, [2013-08-29T10:42:42.282715 #7620]  INFO -- : select uni_key, chartno, examdate, examdetail from cris_exam_online where chartno='0000000666' 
+I, [2013-08-29T10:42:42.457725 #7620]  INFO -- : QueryByChartNO closed database.
+I, [2013-08-29T10:42:45.190881 #7620]  INFO -- : QueryByChartNO 127.0.0.1,orcl connect ok.
+I, [2013-08-29T10:42:45.190881 #7620]  INFO -- : select uni_key, chartno, examdate, examdetail from cris_exam_online where chartno='8383269' 
+I, [2013-08-29T10:42:45.195881 #7620]  INFO -- : QueryByChartNO closed database.
+I, [2013-08-29T10:42:58.125621 #7620]  INFO -- : QueryByChartNO 127.0.0.1,orcl connect ok.
+I, [2013-08-29T10:42:58.126621 #7620]  INFO -- : select uni_key, chartno, examdate, examdetail from cris_exam_online where chartno='8383269' 
+I, [2013-08-29T10:42:58.131621 #7620]  INFO -- : QueryByChartNO closed database.
+I, [2013-08-29T10:43:09.946297 #7620]  INFO -- : QueryByChartNO 127.0.0.1,orcl connect ok.
+I, [2013-08-29T10:43:09.946297 #7620]  INFO -- : select uni_key, chartno, examdate, examdetail from cris_exam_online where chartno='8383269' 
+I, [2013-08-29T10:43:09.950297 #7620]  INFO -- : QueryByChartNO closed database.
+I, [2013-08-29T10:43:26.385237 #7620]  INFO -- : QueryByChartNO 127.0.0.1,orcl connect ok.
+I, [2013-08-29T10:43:26.385237 #7620]  INFO -- : select uni_key, chartno, examdate, examdetail from cris_exam_online where chartno='8383269' 
+I, [2013-08-29T10:43:26.390237 #7620]  INFO -- : QueryByChartNO closed database.
+I, [2013-08-29T10:48:47.203587 #3996]  INFO -- : QueryByDate 127.0.0.1,orcl connect ok.
+I, [2013-08-29T10:48:47.205587 #3996]  INFO -- : QueryByDate closed database.
+I, [2013-08-29T10:50:22.623045 #6292]  INFO -- : QueryByDate 127.0.0.1,orcl connect ok.
+D, [2013-08-29T10:50:22.624045 #6292] DEBUG -- : QueryByDate has crashed.
+D, [2013-08-29T10:50:22.624045 #6292] DEBUG -- : undefined method `GetExamByExamDate' for #<UserHandle:0x3a43a78> (NoMethodError)
+D:/git/SamewayIQServer/Main.rb:71:in `block in <class:Main>'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1541:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1541:in `block in compile!'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:950:in `[]'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:950:in `block (3 levels) in route!'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:966:in `route_eval'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:950:in `block (2 levels) in route!'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:987:in `block in process_route'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:985:in `catch'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:985:in `process_route'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:948:in `block in route!'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:947:in `each'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:947:in `route!'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1059:in `block in dispatch!'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `block in invoke'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `catch'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `invoke'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1056:in `dispatch!'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:882:in `block in call!'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `block in invoke'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `catch'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `invoke'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:882:in `call!'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:870:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-protection-1.5.0/lib/rack/protection/xss_header.rb:18:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-protection-1.5.0/lib/rack/protection/path_traversal.rb:16:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-protection-1.5.0/lib/rack/protection/json_csrf.rb:18:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-protection-1.5.0/lib/rack/protection/base.rb:49:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-protection-1.5.0/lib/rack/protection/base.rb:49:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-protection-1.5.0/lib/rack/protection/frame_options.rb:31:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/nulllogger.rb:9:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/showexceptions.rb:21:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:175:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1949:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1449:in `block in call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1726:in `synchronize'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1449:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/lint.rb:49:in `_call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/lint.rb:37:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/showexceptions.rb:24:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/commonlogger.rb:33:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:212:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/chunked.rb:43:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/thin-1.5.1/lib/thin/connection.rb:81:in `block in pre_process'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/thin-1.5.1/lib/thin/connection.rb:79:in `catch'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/thin-1.5.1/lib/thin/connection.rb:79:in `pre_process'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/thin-1.5.1/lib/thin/connection.rb:54:in `process'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/thin-1.5.1/lib/thin/connection.rb:39:in `receive_data'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/eventmachine-1.0.0-x86-mingw32/lib/eventmachine.rb:187:in `run_machine'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/eventmachine-1.0.0-x86-mingw32/lib/eventmachine.rb:187:in `run'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/thin-1.5.1/lib/thin/backends/base.rb:63:in `start'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/thin-1.5.1/lib/thin/server.rb:159:in `start'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/handler/thin.rb:16:in `run'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/server.rb:264:in `start'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/server.rb:141:in `start'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/bin/rackup:4:in `<top (required)>'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/bin/rackup:23:in `load'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/bin/rackup:23:in `<main>'
+I, [2013-08-29T10:50:22.626045 #6292]  INFO -- : QueryByDate closed database.
+I, [2013-08-29T10:50:58.961123 #5944]  INFO -- : QueryByDate 127.0.0.1,orcl connect ok.
+I, [2013-08-29T10:50:58.961123 #5944]  INFO -- : select uni_key, chartno, examdate, examdetail from cris_exam_online where examdate='2012/10/22' 
+I, [2013-08-29T10:50:58.991125 #5944]  INFO -- : QueryByDate closed database.
+I, [2013-08-29T10:51:17.876205 #5944]  INFO -- : QueryByDate 127.0.0.1,orcl connect ok.
+I, [2013-08-29T10:51:17.877205 #5944]  INFO -- : select uni_key, chartno, examdate, examdetail from cris_exam_online where examdate='2012/10/22' 
+I, [2013-08-29T10:51:17.884205 #5944]  INFO -- : QueryByDate closed database.
+I, [2013-08-29T10:51:53.909266 #5944]  INFO -- : QueryByDate 127.0.0.1,orcl connect ok.
+I, [2013-08-29T10:51:53.910266 #5944]  INFO -- : select uni_key, chartno, examdate, examdetail from cris_exam_online where examdate='2012/10/25' 
+I, [2013-08-29T10:51:53.917266 #5944]  INFO -- : QueryByDate closed database.
+I, [2013-08-29T10:55:43.598403 #5944]  INFO -- : QueryByDate 127.0.0.1,orcl connect ok.
+I, [2013-08-29T10:55:43.598403 #5944]  INFO -- : select uni_key, chartno, examdate, examdetail from cris_exam_online where examdate='2012/10/25' 
+I, [2013-08-29T10:55:43.609404 #5944]  INFO -- : QueryByDate closed database.
+I, [2013-08-29T10:57:25.454229 #2780]  INFO -- : QueryByAccessionNO 127.0.0.1,orcl connect ok.
+D, [2013-08-29T10:57:25.455229 #2780] DEBUG -- : QueryByAccessionNO has crashed.
+D, [2013-08-29T10:57:25.455229 #2780] DEBUG -- : undefined method `GetExamByAccessionNO' for #<UserHandle:0x38beab0> (NoMethodError)
+D:/git/SamewayIQServer/Main.rb:40:in `block in <class:Main>'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1541:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1541:in `block in compile!'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:950:in `[]'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:950:in `block (3 levels) in route!'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:966:in `route_eval'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:950:in `block (2 levels) in route!'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:987:in `block in process_route'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:985:in `catch'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:985:in `process_route'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:948:in `block in route!'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:947:in `each'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:947:in `route!'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1059:in `block in dispatch!'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `block in invoke'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `catch'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `invoke'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1056:in `dispatch!'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:882:in `block in call!'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `block in invoke'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `catch'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `invoke'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:882:in `call!'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:870:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-protection-1.5.0/lib/rack/protection/xss_header.rb:18:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-protection-1.5.0/lib/rack/protection/path_traversal.rb:16:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-protection-1.5.0/lib/rack/protection/json_csrf.rb:18:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-protection-1.5.0/lib/rack/protection/base.rb:49:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-protection-1.5.0/lib/rack/protection/base.rb:49:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-protection-1.5.0/lib/rack/protection/frame_options.rb:31:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/nulllogger.rb:9:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/showexceptions.rb:21:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:175:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1949:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1449:in `block in call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1726:in `synchronize'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:1449:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/lint.rb:49:in `_call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/lint.rb:37:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/showexceptions.rb:24:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/commonlogger.rb:33:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/sinatra-1.4.3/lib/sinatra/base.rb:212:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/chunked.rb:43:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/thin-1.5.1/lib/thin/connection.rb:81:in `block in pre_process'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/thin-1.5.1/lib/thin/connection.rb:79:in `catch'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/thin-1.5.1/lib/thin/connection.rb:79:in `pre_process'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/thin-1.5.1/lib/thin/connection.rb:54:in `process'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/thin-1.5.1/lib/thin/connection.rb:39:in `receive_data'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/eventmachine-1.0.0-x86-mingw32/lib/eventmachine.rb:187:in `run_machine'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/eventmachine-1.0.0-x86-mingw32/lib/eventmachine.rb:187:in `run'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/thin-1.5.1/lib/thin/backends/base.rb:63:in `start'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/thin-1.5.1/lib/thin/server.rb:159:in `start'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/handler/thin.rb:16:in `run'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/server.rb:264:in `start'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/server.rb:141:in `start'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/lib/ruby/gems/1.9.1/gems/rack-1.5.2/bin/rackup:4:in `<top (required)>'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/bin/rackup:23:in `load'
+D:/MotorolaRhoMobileSuite2.2.1.13/ruby/bin/rackup:23:in `<main>'
+I, [2013-08-29T10:57:25.457229 #2780]  INFO -- : QueryByAccessionNO closed database.
+I, [2013-08-29T10:58:46.796882 #6368]  INFO -- : QueryByAccessionNO 127.0.0.1,orcl connect ok.
+I, [2013-08-29T10:58:46.796882 #6368]  INFO -- : select uni_key, chartno, examdate, examdetail from cris_exam_online where uni_key='1429958235' 
+I, [2013-08-29T10:58:46.803882 #6368]  INFO -- : QueryByAccessionNO closed database.
+I, [2013-08-29T10:58:50.079069 #6368]  INFO -- : QueryByChartNO 127.0.0.1,orcl connect ok.
+I, [2013-08-29T10:58:50.079069 #6368]  INFO -- : select uni_key, chartno, examdate, examdetail from cris_exam_online where chartno='8383269' 
+I, [2013-08-29T10:58:50.084070 #6368]  INFO -- : QueryByChartNO closed database.
+I, [2013-08-29T10:58:50.937119 #6368]  INFO -- : QueryByChartNO 127.0.0.1,orcl connect ok.
+I, [2013-08-29T10:58:50.937119 #6368]  INFO -- : select uni_key, chartno, examdate, examdetail from cris_exam_online where chartno='8383269' 
+I, [2013-08-29T10:58:50.942119 #6368]  INFO -- : QueryByChartNO closed database.
+I, [2013-08-29T10:59:15.529525 #6368]  INFO -- : QueryByDate 127.0.0.1,orcl connect ok.
+I, [2013-08-29T10:59:15.529525 #6368]  INFO -- : select uni_key, chartno, examdate, examdetail from cris_exam_online where examdate='2012/10/25' 
+I, [2013-08-29T10:59:15.535525 #6368]  INFO -- : QueryByDate closed database.
+I, [2013-08-29T10:59:43.730138 #6368]  INFO -- : QueryByAccessionNO 127.0.0.1,orcl connect ok.
+I, [2013-08-29T10:59:43.731138 #6368]  INFO -- : select uni_key, chartno, examdate, examdetail from cris_exam_online where uni_key='1429958235' 
+I, [2013-08-29T10:59:43.735138 #6368]  INFO -- : QueryByAccessionNO closed database.
+I, [2013-08-29T11:00:33.443982 #6368]  INFO -- : QueryByDate 127.0.0.1,orcl connect ok.
+I, [2013-08-29T11:00:33.443982 #6368]  INFO -- : select uni_key, chartno, examdate, examdetail from cris_exam_online where examdate='2012/10/25' 
+I, [2013-08-29T11:00:33.451982 #6368]  INFO -- : QueryByDate closed database.
+I, [2013-08-29T11:02:09.071451 #6368]  INFO -- : QueryByChartNO 127.0.0.1,orcl connect ok.
+I, [2013-08-29T11:02:09.072451 #6368]  INFO -- : select uni_key, chartno, examdate, examdetail from cris_exam_online where chartno='2172145' 
+I, [2013-08-29T11:02:09.077452 #6368]  INFO -- : QueryByChartNO closed database.
+I, [2013-08-29T11:08:01.513610 #1200]  INFO -- : QueryByChartNO 127.0.0.1,orcl connect ok.
+I, [2013-08-29T11:08:01.513610 #1200]  INFO -- : select uni_key, chartno, examdate, examdetail from cris_exam_online where chartno='2172145' 
+I, [2013-08-29T11:08:01.519610 #1200]  INFO -- : QueryByChartNO closed database.
+I, [2013-08-29T11:08:55.574702 #1200]  INFO -- : QueryByChartNO 127.0.0.1,orcl connect ok.
+I, [2013-08-29T11:08:55.574702 #1200]  INFO -- : select uni_key, chartno, examdate, examdetail from cris_exam_online where chartno='2172145' 
+I, [2013-08-29T11:08:55.579702 #1200]  INFO -- : QueryByChartNO closed database.
+I, [2013-08-29T11:08:56.758770 #1200]  INFO -- : QueryByChartNO 127.0.0.1,orcl connect ok.
+I, [2013-08-29T11:08:56.758770 #1200]  INFO -- : select uni_key, chartno, examdate, examdetail from cris_exam_online where chartno='2172145' 
+I, [2013-08-29T11:08:56.762770 #1200]  INFO -- : QueryByChartNO closed database.
+I, [2013-08-29T11:08:57.368804 #1200]  INFO -- : QueryByChartNO 127.0.0.1,orcl connect ok.
+I, [2013-08-29T11:08:57.368804 #1200]  INFO -- : select uni_key, chartno, examdate, examdetail from cris_exam_online where chartno='2172145' 
+I, [2013-08-29T11:08:57.373805 #1200]  INFO -- : QueryByChartNO closed database.
+I, [2013-08-29T11:08:57.742826 #1200]  INFO -- : QueryByChartNO 127.0.0.1,orcl connect ok.
+I, [2013-08-29T11:08:57.742826 #1200]  INFO -- : select uni_key, chartno, examdate, examdetail from cris_exam_online where chartno='2172145' 
+I, [2013-08-29T11:08:57.746826 #1200]  INFO -- : QueryByChartNO closed database.
+I, [2013-08-29T20:22:06.943513 #5984]  INFO -- : QueryByChartNO 127.0.0.1,orcl connect ok.
+I, [2013-08-29T20:22:06.943513 #5984]  INFO -- : select uni_key, chartno, examdate, examdetail from cris_exam_online where chartno='2172145' 
+I, [2013-08-29T20:22:07.863915 #5984]  INFO -- : QueryByChartNO closed database.
+I, [2013-08-29T20:25:43.928294 #5984]  INFO -- : QueryByChartNO 127.0.0.1,orcl connect ok.
+I, [2013-08-29T20:25:43.928294 #5984]  INFO -- : select uni_key, chartno, examdate, examdetail from cris_exam_online where chartno='2172145' 
+I, [2013-08-29T20:25:43.943895 #5984]  INFO -- : QueryByChartNO closed database.
+I, [2013-08-29T20:25:49.024904 #5984]  INFO -- : QueryByChartNO 127.0.0.1,orcl connect ok.
+I, [2013-08-29T20:25:49.024904 #5984]  INFO -- : select uni_key, chartno, examdate, examdetail from cris_exam_online where chartno='2172145' 
+I, [2013-08-29T20:25:49.040504 #5984]  INFO -- : QueryByChartNO closed database.
+I, [2013-08-29T20:29:28.509690 #5984]  INFO -- : QueryByChartNO 127.0.0.1,orcl connect ok.
+I, [2013-08-29T20:29:28.509690 #5984]  INFO -- : select uni_key, chartno, examdate, examdetail from cris_exam_online where chartno='2172145' 
+I, [2013-08-29T20:29:28.540890 #5984]  INFO -- : QueryByChartNO closed database.
+I, [2013-08-29T20:29:36.741905 #5984]  INFO -- : QueryByChartNO 127.0.0.1,orcl connect ok.
+I, [2013-08-29T20:29:36.741905 #5984]  INFO -- : select uni_key, chartno, examdate, examdetail from cris_exam_online where chartno='2172145' 
+I, [2013-08-29T20:29:36.757505 #5984]  INFO -- : QueryByChartNO closed database.
+I, [2013-08-29T20:29:39.243910 #5984]  INFO -- : QueryByChartNO 127.0.0.1,orcl connect ok.
+I, [2013-08-29T20:29:39.243910 #5984]  INFO -- : select uni_key, chartno, examdate, examdetail from cris_exam_online where chartno='2172145' 
+I, [2013-08-29T20:29:39.290710 #5984]  INFO -- : QueryByChartNO closed database.
+I, [2013-08-29T20:35:49.982561 #5984]  INFO -- : QueryByChartNO 127.0.0.1,orcl connect ok.
+I, [2013-08-29T20:35:49.982561 #5984]  INFO -- : select uni_key, chartno, examdate, examdetail from cris_exam_online where chartno='2172145' 
+I, [2013-08-29T20:35:49.998161 #5984]  INFO -- : QueryByChartNO closed database.
+I, [2013-08-29T20:35:55.916572 #5984]  INFO -- : QueryByChartNO 127.0.0.1,orcl connect ok.
+I, [2013-08-29T20:35:55.932172 #5984]  INFO -- : select uni_key, chartno, examdate, examdetail from cris_exam_online where chartno='2172145' 
+I, [2013-08-29T20:35:55.932172 #5984]  INFO -- : QueryByChartNO closed database.
+I, [2013-08-29T20:36:20.476015 #5984]  INFO -- : QueryByChartNO 127.0.0.1,orcl connect ok.
+I, [2013-08-29T20:36:20.476015 #5984]  INFO -- : select uni_key, chartno, examdate, examdetail from cris_exam_online where chartno='2172145' 
+I, [2013-08-29T20:36:20.491615 #5984]  INFO -- : QueryByChartNO closed database.
+I, [2013-08-29T20:37:32.144942 #5984]  INFO -- : QueryByChartNO 127.0.0.1,orcl connect ok.
+I, [2013-08-29T20:37:32.144942 #5984]  INFO -- : select uni_key, chartno, examdate, examdetail from cris_exam_online where chartno='2172145' 
+I, [2013-08-29T20:37:32.160542 #5984]  INFO -- : QueryByChartNO closed database.
+I, [2013-08-29T20:38:21.415230 #5984]  INFO -- : QueryByChartNO 127.0.0.1,orcl connect ok.
+I, [2013-08-29T20:38:21.415230 #5984]  INFO -- : select uni_key, chartno, examdate, examdetail from cris_exam_online where chartno='2172145' 
+I, [2013-08-29T20:38:21.430830 #5984]  INFO -- : QueryByChartNO closed database.
+I, [2013-08-29T20:38:40.359664 #5984]  INFO -- : QueryByChartNO 127.0.0.1,orcl connect ok.
+I, [2013-08-29T20:38:40.359664 #5984]  INFO -- : select uni_key, chartno, examdate, examdetail from cris_exam_online where chartno='2172145' 
+I, [2013-08-29T20:38:40.375264 #5984]  INFO -- : QueryByChartNO closed database.
+I, [2013-08-29T20:39:52.942992 #5984]  INFO -- : QueryByChartNO 127.0.0.1,orcl connect ok.
+I, [2013-08-29T20:39:52.958592 #5984]  INFO -- : select uni_key, chartno, examdate, examdetail from cris_exam_online where chartno='2172145' 
+I, [2013-08-29T20:39:52.958592 #5984]  INFO -- : QueryByChartNO closed database.
+I, [2013-08-29T20:42:02.445220 #5984]  INFO -- : QueryByChartNO 127.0.0.1,orcl connect ok.
+I, [2013-08-29T20:42:02.445220 #5984]  INFO -- : select uni_key, chartno, examdate, examdetail from cris_exam_online where chartno='2172145' 
+I, [2013-08-29T20:42:02.492020 #5984]  INFO -- : QueryByChartNO closed database.
+I, [2013-08-29T21:25:15.696046 #3000]  INFO -- : QueryByChartNO 127.0.0.1,orcl connect ok.
+I, [2013-08-29T21:25:15.696046 #3000]  INFO -- : select uni_key, chartno, examdate, examdetail from cris_exam_online where chartno='2172145' 
+I, [2013-08-29T21:25:15.696046 #3000]  INFO -- : QueryByChartNO closed database.
+I, [2013-08-29T21:25:50.198707 #3000]  INFO -- : QueryByChartNO 127.0.0.1,orcl connect ok.
+I, [2013-08-29T21:25:50.198707 #3000]  INFO -- : select uni_key, chartno, examdate, examdetail from cris_exam_online where chartno='2172145' 
+I, [2013-08-29T21:25:50.214307 #3000]  INFO -- : QueryByChartNO closed database.
+I, [2013-08-29T21:25:54.574522 #3000]  INFO -- : QueryByChartNO 127.0.0.1,orcl connect ok.
+I, [2013-08-29T21:25:54.574522 #3000]  INFO -- : select uni_key, chartno, examdate, examdetail from cris_exam_online where chartno='2172145' 
+I, [2013-08-29T21:25:54.574522 #3000]  INFO -- : QueryByChartNO closed database.
+I, [2013-08-29T22:23:57.454072 #3000]  INFO -- : QueryByChartNO 127.0.0.1,orcl connect ok.
+I, [2013-08-29T22:23:57.469672 #3000]  INFO -- : select uni_key, chartno, examdate, examdetail from cris_exam_online where chartno='2172145' 
+I, [2013-08-29T22:23:57.485272 #3000]  INFO -- : QueryByChartNO closed database.
+I, [2013-08-29T22:24:04.107085 #3000]  INFO -- : QueryByChartNO 127.0.0.1,orcl connect ok.
+I, [2013-08-29T22:24:04.107085 #3000]  INFO -- : select uni_key, chartno, examdate, examdetail from cris_exam_online where chartno='2172145' 
+I, [2013-08-29T22:24:04.122685 #3000]  INFO -- : QueryByChartNO closed database.
+I, [2013-08-29T22:25:05.973195 #3000]  INFO -- : QueryByChartNO 127.0.0.1,orcl connect ok.
+I, [2013-08-29T22:25:05.973195 #3000]  INFO -- : select uni_key, chartno, examdate, examdetail from cris_exam_online where chartno='2172145' 
+I, [2013-08-29T22:25:05.988795 #3000]  INFO -- : QueryByChartNO closed database.
+I, [2013-08-29T22:26:46.866572 #3000]  INFO -- : QueryByChartNO 127.0.0.1,orcl connect ok.
+I, [2013-08-29T22:26:46.882172 #3000]  INFO -- : select uni_key, chartno, examdate, examdetail from cris_exam_online where chartno='2172145' 
+I, [2013-08-29T22:26:46.882172 #3000]  INFO -- : QueryByChartNO closed database.
+I, [2013-08-29T22:43:25.878702 #3000]  INFO -- : QueryByChartNO 127.0.0.1,orcl connect ok.
+I, [2013-08-29T22:43:25.878702 #3000]  INFO -- : select uni_key, chartno, examdate, examdetail from cris_exam_online where chartno='2172145' 
+I, [2013-08-29T22:43:25.894302 #3000]  INFO -- : QueryByChartNO closed database.
+I, [2013-08-29T22:43:45.279140 #3000]  INFO -- : QueryByChartNO 127.0.0.1,orcl connect ok.
+I, [2013-08-29T22:43:45.294740 #3000]  INFO -- : select uni_key, chartno, examdate, examdetail from cris_exam_online where chartno='2172145' 
+I, [2013-08-29T22:43:45.294740 #3000]  INFO -- : QueryByChartNO closed database.
+I, [2013-08-29T22:44:16.538397 #3000]  INFO -- : QueryByChartNO 127.0.0.1,orcl connect ok.
+I, [2013-08-29T22:44:16.538397 #3000]  INFO -- : select uni_key, chartno, examdate, examdetail from cris_exam_online where chartno='2172145' 
+I, [2013-08-29T22:44:16.553997 #3000]  INFO -- : QueryByChartNO closed database.
+I, [2013-08-29T22:45:43.218149 #3000]  INFO -- : QueryByChartNO 127.0.0.1,orcl connect ok.
+I, [2013-08-29T22:45:43.218149 #3000]  INFO -- : select uni_key, chartno, examdate, examdetail from cris_exam_online where chartno='2172145' 
+I, [2013-08-29T22:45:43.264949 #3000]  INFO -- : QueryByChartNO closed database.
+I, [2013-08-29T22:46:11.759600 #3000]  INFO -- : QueryByChartNO 127.0.0.1,orcl connect ok.
+I, [2013-08-29T22:46:11.759600 #3000]  INFO -- : select uni_key, chartno, examdate, examdetail from cris_exam_online where chartno='2172145' 
+I, [2013-08-29T22:46:11.837600 #3000]  INFO -- : QueryByChartNO closed database.
+I, [2013-08-29T22:47:20.622121 #3000]  INFO -- : QueryByChartNO 127.0.0.1,orcl connect ok.
+I, [2013-08-29T22:47:20.622121 #3000]  INFO -- : select uni_key, chartno, examdate, examdetail from cris_exam_online where chartno='2172145' 
+I, [2013-08-29T22:47:20.622121 #3000]  INFO -- : QueryByChartNO closed database.
+I, [2013-08-29T22:47:34.710748 #3000]  INFO -- : QueryByChartNO 127.0.0.1,orcl connect ok.
+I, [2013-08-29T22:47:34.710748 #3000]  INFO -- : select uni_key, chartno, examdate, examdetail from cris_exam_online where chartno='2172145' 
+I, [2013-08-29T22:47:34.726348 #3000]  INFO -- : QueryByChartNO closed database.
+I, [2013-08-29T23:18:36.844215 #3000]  INFO -- : QueryByChartNO 127.0.0.1,orcl connect ok.
+I, [2013-08-29T23:18:36.844215 #3000]  INFO -- : select uni_key, chartno, examdate, examdetail from cris_exam_online where chartno='2172145' 
+I, [2013-08-29T23:18:36.859815 #3000]  INFO -- : QueryByChartNO closed database.
+I, [2013-08-29T23:18:48.516239 #3000]  INFO -- : QueryByChartNO 127.0.0.1,orcl connect ok.
+I, [2013-08-29T23:18:48.516239 #3000]  INFO -- : select uni_key, chartno, examdate, examdetail from cris_exam_online where chartno='2172145' 
+I, [2013-08-29T23:18:48.516239 #3000]  INFO -- : QueryByChartNO closed database.
+I, [2013-08-29T23:21:44.893959 #3000]  INFO -- : QueryByChartNO 127.0.0.1,orcl connect ok.
+I, [2013-08-29T23:21:44.893959 #3000]  INFO -- : select uni_key, chartno, examdate, examdetail from cris_exam_online where chartno='2172145' 
+I, [2013-08-29T23:21:44.893959 #3000]  INFO -- : QueryByChartNO closed database.
+I, [2013-08-29T23:23:09.080707 #3000]  INFO -- : QueryByChartNO 127.0.0.1,orcl connect ok.
+I, [2013-08-29T23:23:09.096307 #3000]  INFO -- : select uni_key, chartno, examdate, examdetail from cris_exam_online where chartno='2172145' 
+I, [2013-08-29T23:23:09.096307 #3000]  INFO -- : QueryByChartNO closed database.
+I, [2013-08-29T23:23:24.698141 #3000]  INFO -- : QueryByChartNO 127.0.0.1,orcl connect ok.
+I, [2013-08-29T23:23:24.698141 #3000]  INFO -- : select uni_key, chartno, examdate, examdetail from cris_exam_online where chartno='2172145' 
+I, [2013-08-29T23:23:24.698141 #3000]  INFO -- : QueryByChartNO closed database.
+I, [2013-08-29T23:24:47.719685 #3000]  INFO -- : QueryByChartNO 127.0.0.1,orcl connect ok.
+I, [2013-08-29T23:24:47.719685 #3000]  INFO -- : select uni_key, chartno, examdate, examdetail from cris_exam_online where chartno='2172145' 
+I, [2013-08-29T23:24:47.729685 #3000]  INFO -- : QueryByChartNO closed database.
+I, [2013-08-29T23:25:03.336710 #3000]  INFO -- : QueryByChartNO 127.0.0.1,orcl connect ok.
+I, [2013-08-29T23:25:03.346710 #3000]  INFO -- : select uni_key, chartno, examdate, examdetail from cris_exam_online where chartno='2172145' 
+I, [2013-08-29T23:25:03.346710 #3000]  INFO -- : QueryByChartNO closed database.
+I, [2013-08-29T23:25:36.886758 #3000]  INFO -- : QueryByChartNO 127.0.0.1,orcl connect ok.
+I, [2013-08-29T23:25:36.886758 #3000]  INFO -- : select uni_key, chartno, examdate, examdetail from cris_exam_online where chartno='2172145' 
+I, [2013-08-29T23:25:36.896758 #3000]  INFO -- : QueryByChartNO closed database.
+I, [2013-08-29T23:26:19.341819 #3000]  INFO -- : QueryByChartNO 127.0.0.1,orcl connect ok.
+I, [2013-08-29T23:26:19.341819 #3000]  INFO -- : select uni_key, chartno, examdate, examdetail from cris_exam_online where chartno='2172145' 
+I, [2013-08-29T23:26:19.351819 #3000]  INFO -- : QueryByChartNO closed database.
+I, [2013-08-29T23:32:42.261358 #3000]  INFO -- : QueryByChartNO 127.0.0.1,orcl connect ok.
+I, [2013-08-29T23:32:42.261358 #3000]  INFO -- : select uni_key, chartno, examdate, examdetail from cris_exam_online where chartno='2172145' 
+I, [2013-08-29T23:32:42.271358 #3000]  INFO -- : QueryByChartNO closed database.
+I, [2013-08-29T23:32:55.291378 #3000]  INFO -- : QueryByChartNO 127.0.0.1,orcl connect ok.
+I, [2013-08-29T23:32:55.291378 #3000]  INFO -- : select uni_key, chartno, examdate, examdetail from cris_exam_online where chartno='2172145' 
+I, [2013-08-29T23:32:55.291378 #3000]  INFO -- : QueryByChartNO closed database.
+I, [2013-08-29T23:35:19.791638 #3000]  INFO -- : QueryByChartNO 127.0.0.1,orcl connect ok.
+I, [2013-08-29T23:35:19.791638 #3000]  INFO -- : select uni_key, chartno, examdate, examdetail from cris_exam_online where chartno='2172145' 
+I, [2013-08-29T23:35:19.791638 #3000]  INFO -- : QueryByChartNO closed database.
+I, [2013-08-29T23:35:41.758670 #3000]  INFO -- : QueryByChartNO 127.0.0.1,orcl connect ok.
+I, [2013-08-29T23:35:41.758670 #3000]  INFO -- : select uni_key, chartno, examdate, examdetail from cris_exam_online where chartno='2172145' 
+I, [2013-08-29T23:35:41.768670 #3000]  INFO -- : QueryByChartNO closed database.
+I, [2013-08-29T23:36:11.982716 #3000]  INFO -- : QueryByChartNO 127.0.0.1,orcl connect ok.
+I, [2013-08-29T23:36:11.982716 #3000]  INFO -- : select uni_key, chartno, examdate, examdetail from cris_exam_online where chartno='2172145' 
+I, [2013-08-29T23:36:11.982716 #3000]  INFO -- : QueryByChartNO closed database.
+I, [2013-08-29T23:36:37.781754 #3000]  INFO -- : QueryByChartNO 127.0.0.1,orcl connect ok.
+I, [2013-08-29T23:36:37.781754 #3000]  INFO -- : select uni_key, chartno, examdate, examdetail from cris_exam_online where chartno='2172145' 
+I, [2013-08-29T23:36:37.781754 #3000]  INFO -- : QueryByChartNO closed database.
+I, [2013-08-29T23:37:11.582810 #3000]  INFO -- : QueryByChartNO 127.0.0.1,orcl connect ok.
+I, [2013-08-29T23:37:11.582810 #3000]  INFO -- : select uni_key, chartno, examdate, examdetail from cris_exam_online where chartno='2172145' 
+I, [2013-08-29T23:37:11.582810 #3000]  INFO -- : QueryByChartNO closed database.
+I, [2013-08-29T23:37:29.344841 #3000]  INFO -- : QueryByChartNO 127.0.0.1,orcl connect ok.
+I, [2013-08-29T23:37:29.344841 #3000]  INFO -- : select uni_key, chartno, examdate, examdetail from cris_exam_online where chartno='2172145' 
+I, [2013-08-29T23:37:29.344841 #3000]  INFO -- : QueryByChartNO closed database.
+I, [2013-08-29T23:37:49.440873 #3000]  INFO -- : QueryByChartNO 127.0.0.1,orcl connect ok.
+I, [2013-08-29T23:37:49.440873 #3000]  INFO -- : select uni_key, chartno, examdate, examdetail from cris_exam_online where chartno='2172145' 
+I, [2013-08-29T23:37:49.450873 #3000]  INFO -- : QueryByChartNO closed database.
+I, [2013-08-29T23:38:52.576965 #3000]  INFO -- : QueryByChartNO 127.0.0.1,orcl connect ok.
+I, [2013-08-29T23:38:52.576965 #3000]  INFO -- : select uni_key, chartno, examdate, examdetail from cris_exam_online where chartno='2172145' 
+I, [2013-08-29T23:38:52.586965 #3000]  INFO -- : QueryByChartNO closed database.
+I, [2013-08-29T23:39:54.553056 #3000]  INFO -- : QueryByChartNO 127.0.0.1,orcl connect ok.
+I, [2013-08-29T23:39:54.553056 #3000]  INFO -- : select uni_key, chartno, examdate, examdetail from cris_exam_online where chartno='2172145' 
+I, [2013-08-29T23:39:54.553056 #3000]  INFO -- : QueryByChartNO closed database.
+I, [2013-08-29T23:40:17.641092 #3000]  INFO -- : QueryByChartNO 127.0.0.1,orcl connect ok.
+I, [2013-08-29T23:40:17.641092 #3000]  INFO -- : select uni_key, chartno, examdate, examdetail from cris_exam_online where chartno='2172145' 
+I, [2013-08-29T23:40:17.651092 #3000]  INFO -- : QueryByChartNO closed database.
+I, [2013-08-29T23:40:21.366101 #3000]  INFO -- : QueryByChartNO 127.0.0.1,orcl connect ok.
+I, [2013-08-29T23:40:21.366101 #3000]  INFO -- : select uni_key, chartno, examdate, examdetail from cris_exam_online where chartno='2172145' 
+I, [2013-08-29T23:40:21.366101 #3000]  INFO -- : QueryByChartNO closed database.

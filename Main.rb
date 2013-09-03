@@ -107,7 +107,33 @@ class Main < Sinatra::Base
     end
   end
   
-  
+  #open report from database with AccessionNO by RESTful, and convert result to JSON for request
+  get '/OpenReportByAccessionNO/:accessionno' do
+    begin      
+      #get parameter
+      AccessionNO=params[:accessionno]
+      
+      #setup logger
+      @logger=Logger.new("log.txt","daily")
+      
+      #connect to database
+      @db=DBHandle.new(SettingHandle::DBTYPE,SettingHandle::DBIP,SettingHandle::DBID,SettingHandle::DBPW,SettingHandle::DBSID)
+      @logger.info("OpenReportByAccessionNO #{SettingHandle::DBIP},#{SettingHandle::DBSID} connect ok.")
+      
+      #make user function
+      uh=UserHandle.new(@db)
+      
+      #get result
+      uh.OpenReportByAccessionNO(AccessionNO)
+    rescue => e
+      @logger.debug("OpenReportByAccessionNO has crashed.") if @logger!=nil
+      @logger.debug(e) if @logger!=nil
+      'error'
+    ensure
+      @db.dbh.disconnect() if @db!=nil
+      @logger.info("OpenReportByAccessionNO closed database.") if @logger!=nil
+    end
+  end
   
 
    get '/test' do

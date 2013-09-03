@@ -6,7 +6,6 @@ require 'logger'
 require 'json'
 
 
-
 class UserHandle
   #last sql command information 
   attr_accessor:chartno
@@ -98,6 +97,21 @@ class UserHandle
     @logger.info(sql)    
            
     @db.dbh.select_all(sql).to_json
+  end
+  
+  #get report data by accession number
+  def OpenReportByAccessionNO(accessionno)
+    @accessionno=accessionno
+    
+    sql="select "
+    sql+="item6 "
+    sql+="from "
+    sql+="cris_exam_online "
+    sql+="where "
+    sql+="uni_key='#{@accessionno}' "
+    @logger.info(sql)    
+    
+    @db.dbh.select_one(sql).to_s().encode("UTF-8", :invalid => :replace, :undef => :replace, :replace => "[V]").to_json
   end
   
   #get user name
