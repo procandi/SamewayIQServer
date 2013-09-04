@@ -151,16 +151,23 @@ class Main < Sinatra::Base
        #get result
        sql="select "
        sql+="uni_key, "
-       sql+="chartno, "
-       sql+="examdate, "
-       sql+="examdetail "
+       sql+="chartno "
        sql+="from "
        sql+="cris_exam_online "
        sql+="where "
        sql+="chartno='#{ChartNO}' "
        @logger.info(sql)    
               
-       @db.dbh.select_all(sql).inspect
+       #dump result
+       #hash={}
+       #result=@db.dbh.select_all(sql).each{|rec| hash['a'] = 'b'}
+       
+       #rec.map { |o| Hash[o.each_pair.to_a] }.to_json
+         
+       #@db.dbh.select_all(sql).collect { |item| {:id => item, :item => item} }.to_json
+         
+       #@db.dbh.select_all(sql).map{ |row| Hash[row] }.to_json
+       result
      rescue => e
        @logger.debug("QueryByChartNO has crashed.") if @logger!=nil
        @logger.debug(e) if @logger!=nil

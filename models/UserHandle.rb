@@ -61,6 +61,11 @@ class UserHandle
     @logger.info(sql)    
            
     @db.dbh.select_all(sql).to_json
+    #result=''
+    #@db.dbh.select_all(sql){|rec|
+    #  result+=rec.to_s()
+    #}
+    #result.to_json
   end
   
   #get short exam data by chart number
@@ -79,6 +84,11 @@ class UserHandle
     @logger.info(sql)    
            
     @db.dbh.select_all(sql).to_json
+    #result=''
+    #@db.dbh.select_all(sql){|rec|
+    #  result+=rec.to_s()
+    #}
+    #result.to_json
   end
   
   #get short exam data by exam date
@@ -97,6 +107,11 @@ class UserHandle
     @logger.info(sql)    
            
     @db.dbh.select_all(sql).to_json
+    #result=''
+    #@db.dbh.select_all(sql){|rec|
+    #  result+=rec.to_s()
+    #}
+    #result.to_json
   end
   
   #get report data by accession number
@@ -129,11 +144,13 @@ class UserHandle
     flag=false
     @db.dbh.select_all(sql){|rec|
       flag=true
-      return rec[0]
+      break
     }  
          
-    if !flag
-      return ""
+    if flag
+      rec[0]
+    else
+      ''
     end
   end
   
@@ -152,11 +169,13 @@ class UserHandle
     flag=false
     @db.dbh.select_all(sql){|rec|
       flag=true
-      return rec[0]
-    }
-    
-    if !flag
-      return ""
+      break
+    }  
+         
+    if flag
+      rec[0]
+    else
+      ''
     end
   end
   
@@ -183,7 +202,7 @@ class UserHandle
     }    
     
     if !flag
-      return @chartno+"_"+@examdate.delete("/")
+      @chartno+"_"+@examdate.delete("/")
     end
   end
   
@@ -201,11 +220,13 @@ class UserHandle
     flag=false
     @db.dbh.select_all(sql){|rec|
       flag=true
-      return rec[0]
-    }
-    
-    if !flag
-      return ""
+      break
+    }  
+         
+    if flag
+      rec[0]
+    else
+      ''
     end
   end
   
@@ -223,11 +244,13 @@ class UserHandle
     flag=false
     @db.dbh.select_all(sql){|rec|
       flag=true
-      return rec[0]
-    }
-    
-    if !flag
-      return ""
+      break
+    }  
+         
+    if flag
+      rec[0]
+    else
+      ''
     end
   end
   
@@ -251,7 +274,7 @@ class UserHandle
       break
     }    
     
-    return flag
+    flag
   end
   
   #insert one exam data to database
@@ -391,7 +414,7 @@ class UserHandle
       break
     }    
     
-    return flag
+    flag
   end
   
   #insert one patient data to database
