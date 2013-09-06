@@ -52,20 +52,18 @@ class UserHandle
     sql="select "
     sql+="uni_key, "
     sql+="chartno, "
-    sql+="examdate, "
-    sql+="examdetail "
+    sql+="examdate "
     sql+="from "
     sql+="cris_exam_online "
     sql+="where "
     sql+="uni_key='#{@accessionno}' "
     @logger.info(sql)    
            
-    @db.dbh.select_all(sql).to_json
-    #result=''
-    #@db.dbh.select_all(sql){|rec|
-    #  result+=rec.to_s()
-    #}
-    #result.to_json
+    result=''
+    @db.dbh.select_all(sql){|rec|
+      result+=",#{rec.to_json}"
+    }
+    "[#{result[1..result.length]}]"
   end
   
   #get short exam data by chart number
@@ -75,20 +73,18 @@ class UserHandle
     sql="select "
     sql+="uni_key, "
     sql+="chartno, "
-    sql+="examdate, "
-    sql+="examdetail "
+    sql+="examdate "
     sql+="from "
     sql+="cris_exam_online "
     sql+="where "
     sql+="chartno='#{@chartno}' "
     @logger.info(sql)    
            
-    @db.dbh.select_all(sql).to_json
-    #result=''
-    #@db.dbh.select_all(sql){|rec|
-    #  result+=rec.to_s()
-    #}
-    #result.to_json
+    result=''
+    @db.dbh.select_all(sql){|rec|
+      result+=",#{rec.to_json}"
+    }
+    "[#{result[1..result.length]}]"
   end
   
   #get short exam data by exam date
@@ -98,20 +94,18 @@ class UserHandle
     sql="select "
     sql+="uni_key, "
     sql+="chartno, "
-    sql+="examdate, "
-    sql+="examdetail "
+    sql+="examdate "
     sql+="from "
     sql+="cris_exam_online "
     sql+="where "
     sql+="examdate='#{@examdate}' "
     @logger.info(sql)    
            
-    @db.dbh.select_all(sql).to_json
-    #result=''
-    #@db.dbh.select_all(sql){|rec|
-    #  result+=rec.to_s()
-    #}
-    #result.to_json
+    result=''
+    @db.dbh.select_all(sql){|rec|
+      result+=",#{rec.to_json}"
+    }
+    "[#{result[1..result.length]}]"
   end
   
   #get report data by accession number

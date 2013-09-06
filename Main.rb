@@ -137,9 +137,9 @@ class Main < Sinatra::Base
   
 
    get '/test' do
-     begin      
+     begin
        #get parameter
-       ChartNO='2172145'
+       ChartNO='0000000666'
        
        #setup logger
        @logger=Logger.new("log.txt","daily")
@@ -150,24 +150,23 @@ class Main < Sinatra::Base
 
        #get result
        sql="select "
-       sql+="uni_key, "
-       sql+="chartno "
+       sql+="chartno,examdate,type "
        sql+="from "
        sql+="cris_exam_online "
        sql+="where "
        sql+="chartno='#{ChartNO}' "
        @logger.info(sql)    
               
-       #dump result
-       #hash={}
-       #result=@db.dbh.select_all(sql).each{|rec| hash['a'] = 'b'}
+       #dump result#
+       result=''
+        @db.dbh.select_all(sql){|rec|
+         result+=",#{rec}"
+       }
+       "[#{result[1..result.length].to_json}]"
        
-       #rec.map { |o| Hash[o.each_pair.to_a] }.to_json
-         
-       #@db.dbh.select_all(sql).collect { |item| {:id => item, :item => item} }.to_json
-         
-       #@db.dbh.select_all(sql).map{ |row| Hash[row] }.to_json
-       result
+       #result=@db.dbh.select_one(sql)
+       #result[0]
+       #.encode("UTF-8", :invalid => :replace, :undef => :replace, :replace => "[V]")
      rescue => e
        @logger.debug("QueryByChartNO has crashed.") if @logger!=nil
        @logger.debug(e) if @logger!=nil
