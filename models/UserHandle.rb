@@ -123,6 +123,25 @@ class UserHandle
     @db.dbh.select_one(sql).to_s().encode("UTF-8", :invalid => :replace, :undef => :replace, :replace => "[V]").to_json
   end
   
+  #get image list data by accession number
+  def GetImageListByAccessionNO(accessionno)
+    @accessionno=accessionno
+    
+    sql="select "
+    sql+="filepath,filename "
+    sql+="from "
+    sql+="cris_images_reference "
+    sql+="where "
+    sql+="uni_key='#{@accessionno}' "
+    @logger.info(sql)
+    
+    result=''
+    @db.dbh.select_all(sql){|rec|
+      result+=",#{rec.to_json}"
+    }
+    "[#{result[1..result.length]}]"
+  end
+  
   #get user name
   def GetUserName(userid)
     @userid=userid
