@@ -1,0 +1,88 @@
+# Logfile created on 2013-09-17 20:31:55 +0800 by logger.rb/31641
+I, [2013-09-17T20:31:55.727106 #5636]  INFO -- : QueryByAccessionNO 127.0.0.1,CRIS connect ok.
+I, [2013-09-17T20:31:55.742107 #5636]  INFO -- : select uni_key, chartno, examdate from cris_exam_online where uni_key='A11R4C02738' 
+I, [2013-09-17T20:31:57.796225 #5636]  INFO -- : QueryByAccessionNO closed database.
+I, [2013-09-17T20:32:01.961463 #5636]  INFO -- : OpenReportByAccessionNO 127.0.0.1,CRIS connect ok.
+I, [2013-09-17T20:32:01.963463 #5636]  INFO -- : select item6 from cris_exam_online where uni_key='A11R4C02738' 
+I, [2013-09-17T20:32:02.013466 #5636]  INFO -- : OpenReportByAccessionNO closed database.
+I, [2013-09-17T20:37:25.465966 #5636]  INFO -- : QueryByAccessionNO 127.0.0.1,CRIS connect ok.
+I, [2013-09-17T20:37:25.466966 #5636]  INFO -- : select uni_key, chartno, examdate from cris_exam_online where uni_key='1429958235' 
+I, [2013-09-17T20:37:25.516969 #5636]  INFO -- : QueryByAccessionNO closed database.
+I, [2013-09-17T20:37:33.459423 #5636]  INFO -- : OpenReportByAccessionNO 127.0.0.1,CRIS connect ok.
+I, [2013-09-17T20:37:33.460423 #5636]  INFO -- : select item6 from cris_exam_online where uni_key='A11R4C02738' 
+I, [2013-09-17T20:37:33.526427 #5636]  INFO -- : OpenReportByAccessionNO closed database.
+I, [2013-09-17T20:50:58.947779 #5636]  INFO -- : QueryByAccessionNO 127.0.0.1,CRIS connect ok.
+I, [2013-09-17T20:50:58.947779 #5636]  INFO -- : select uni_key, chartno, examdate from cris_exam_online where uni_key='A11R4C02738' 
+I, [2013-09-17T20:50:58.994579 #5636]  INFO -- : QueryByAccessionNO closed database.
+I, [2013-09-17T20:51:01.821184 #5636]  INFO -- : OpenReportByAccessionNO 127.0.0.1,CRIS connect ok.
+I, [2013-09-17T20:51:01.821184 #5636]  INFO -- : select item6 from cris_exam_online where uni_key='A11R4C02738' 
+I, [2013-09-17T20:51:01.883584 #5636]  INFO -- : OpenReportByAccessionNO closed database.
+I, [2013-09-17T21:22:34.137285 #2004]  INFO -- : GetImageListByAccessionNO 127.0.0.1,CRIS connect ok.
+I, [2013-09-17T21:22:34.137285 #2004]  INFO -- : select filepath,filename from cris_images_reference where uni_key='A11R4C02738' 
+I, [2013-09-17T21:22:34.293286 #2004]  INFO -- : GetImageListByAccessionNO closed database.
+I, [2013-09-17T21:27:28.856003 #2004]  INFO -- : QueryByAccessionNO 127.0.0.1,CRIS connect ok.
+I, [2013-09-17T21:27:28.856003 #2004]  INFO -- : select uni_key, chartno, examdate from cris_exam_online where uni_key='A11R4C02738' 
+I, [2013-09-17T21:27:28.902803 #2004]  INFO -- : QueryByAccessionNO closed database.
+I, [2013-09-17T21:27:30.313806 #2004]  INFO -- : OpenReportByAccessionNO 127.0.0.1,CRIS connect ok.
+I, [2013-09-17T21:27:30.313806 #2004]  INFO -- : select item6 from cris_exam_online where uni_key='A11R4C02738' 
+I, [2013-09-17T21:27:30.376206 #2004]  INFO -- : OpenReportByAccessionNO closed database.
+I, [2013-09-17T21:27:33.703012 #2004]  INFO -- : GetImageListByAccessionNO 127.0.0.1,CRIS connect ok.
+I, [2013-09-17T21:27:33.703012 #2004]  INFO -- : select filepath,filename from cris_images_reference where uni_key='{A11R4C02738}' 
+I, [2013-09-17T21:27:33.718612 #2004]  INFO -- : GetImageListByAccessionNO closed database.
+I, [2013-09-17T21:47:54.520378 #2004]  INFO -- : QueryByAccessionNO 127.0.0.1,CRIS connect ok.
+I, [2013-09-17T21:47:54.520378 #2004]  INFO -- : select uni_key, chartno, examdate from cris_exam_online where uni_key='A11R4C02738' 
+I, [2013-09-17T21:47:54.551578 #2004]  INFO -- : QueryByAccessionNO closed database.
+I, [2013-09-17T21:47:56.274582 #2004]  INFO -- : OpenReportByAccessionNO 127.0.0.1,CRIS connect ok.
+I, [2013-09-17T21:47:56.274582 #2004]  INFO -- : select item6 from cris_exam_online where uni_key='A11R4C02738' 
+I, [2013-09-17T21:47:56.290182 #2004]  INFO -- : OpenReportByAccessionNO closed database.
+I, [2013-09-17T21:48:02.269993 #2004]  INFO -- : GetImageListByAccessionNO 127.0.0.1,CRIS connect ok.
+I, [2013-09-17T21:48:02.269993 #2004]  INFO -- : select filepath,filename from cris_images_reference where uni_key='{A11R4C02738}' 
+I, [2013-09-17T21:48:02.269993 #2004]  INFO -- : GetImageListByAccessionNO closed database.
+I, [2013-09-17T21:49:48.122579 #2004]  INFO -- : GetImageListByAccessionNO 127.0.0.1,CRIS connect ok.
+I, [2013-09-17T21:49:48.122579 #2004]  INFO -- : select filepath,filename from cris_images_reference where uni_key='A11R4C02738' 
+I, [2013-09-17T21:49:48.138179 #2004]  INFO -- : GetImageListByAccessionNO closed database.
+I, [2013-09-17T21:51:08.731921 #2004]  INFO -- : QueryByAccessionNO 127.0.0.1,CRIS connect ok.
+I, [2013-09-17T21:51:08.731921 #2004]  INFO -- : select uni_key, chartno, examdate from cris_exam_online where uni_key='A11R4C02738' 
+I, [2013-09-17T21:51:08.763121 #2004]  INFO -- : QueryByAccessionNO closed database.
+I, [2013-09-17T21:51:09.942123 #2004]  INFO -- : OpenReportByAccessionNO 127.0.0.1,CRIS connect ok.
+I, [2013-09-17T21:51:09.942123 #2004]  INFO -- : select item6 from cris_exam_online where uni_key='A11R4C02738' 
+I, [2013-09-17T21:51:09.973324 #2004]  INFO -- : OpenReportByAccessionNO closed database.
+I, [2013-09-17T21:51:12.401328 #2004]  INFO -- : GetImageListByAccessionNO 127.0.0.1,CRIS connect ok.
+I, [2013-09-17T21:51:12.401328 #2004]  INFO -- : select filepath,filename from cris_images_reference where uni_key='{A11R4C02738}' 
+I, [2013-09-17T21:51:12.401328 #2004]  INFO -- : GetImageListByAccessionNO closed database.
+I, [2013-09-17T21:51:45.221187 #2004]  INFO -- : QueryByAccessionNO 127.0.0.1,CRIS connect ok.
+I, [2013-09-17T21:51:45.221187 #2004]  INFO -- : select uni_key, chartno, examdate from cris_exam_online where uni_key='A11R4C02738' 
+I, [2013-09-17T21:51:45.252387 #2004]  INFO -- : QueryByAccessionNO closed database.
+I, [2013-09-17T21:51:46.216989 #2004]  INFO -- : OpenReportByAccessionNO 127.0.0.1,CRIS connect ok.
+I, [2013-09-17T21:51:46.216989 #2004]  INFO -- : select item6 from cris_exam_online where uni_key='A11R4C02738' 
+I, [2013-09-17T21:51:46.248189 #2004]  INFO -- : OpenReportByAccessionNO closed database.
+I, [2013-09-17T21:51:48.719994 #2004]  INFO -- : GetImageListByAccessionNO 127.0.0.1,CRIS connect ok.
+I, [2013-09-17T21:51:48.719994 #2004]  INFO -- : select filepath,filename from cris_images_reference where uni_key='A11R4C02738' 
+I, [2013-09-17T21:51:48.735594 #2004]  INFO -- : GetImageListByAccessionNO closed database.
+I, [2013-09-17T21:58:47.520731 #2004]  INFO -- : QueryByAccessionNO 127.0.0.1,CRIS connect ok.
+I, [2013-09-17T21:58:47.520731 #2004]  INFO -- : select uni_key, chartno, examdate from cris_exam_online where uni_key='A11R4C02738' 
+I, [2013-09-17T21:58:47.551931 #2004]  INFO -- : QueryByAccessionNO closed database.
+I, [2013-09-17T21:58:48.592533 #2004]  INFO -- : OpenReportByAccessionNO 127.0.0.1,CRIS connect ok.
+I, [2013-09-17T21:58:48.592533 #2004]  INFO -- : select item6 from cris_exam_online where uni_key='A11R4C02738' 
+I, [2013-09-17T21:58:48.623733 #2004]  INFO -- : OpenReportByAccessionNO closed database.
+I, [2013-09-17T21:58:50.782537 #2004]  INFO -- : GetImageListByAccessionNO 127.0.0.1,CRIS connect ok.
+I, [2013-09-17T21:58:50.782537 #2004]  INFO -- : select filepath,filename from cris_images_reference where uni_key='A11R4C02738' 
+I, [2013-09-17T21:58:50.782537 #2004]  INFO -- : GetImageListByAccessionNO closed database.
+I, [2013-09-17T21:59:21.495392 #2004]  INFO -- : QueryByAccessionNO 127.0.0.1,CRIS connect ok.
+I, [2013-09-17T21:59:21.495392 #2004]  INFO -- : select uni_key, chartno, examdate from cris_exam_online where uni_key='A11R4C02738' 
+I, [2013-09-17T21:59:21.526592 #2004]  INFO -- : QueryByAccessionNO closed database.
+I, [2013-09-17T21:59:22.982395 #2004]  INFO -- : OpenReportByAccessionNO 127.0.0.1,CRIS connect ok.
+I, [2013-09-17T21:59:22.982395 #2004]  INFO -- : select item6 from cris_exam_online where uni_key='A11R4C02738' 
+I, [2013-09-17T21:59:23.013595 #2004]  INFO -- : OpenReportByAccessionNO closed database.
+I, [2013-09-17T21:59:24.924799 #2004]  INFO -- : GetImageListByAccessionNO 127.0.0.1,CRIS connect ok.
+I, [2013-09-17T21:59:24.924799 #2004]  INFO -- : select filepath,filename from cris_images_reference where uni_key='A11R4C02738' 
+I, [2013-09-17T21:59:24.924799 #2004]  INFO -- : GetImageListByAccessionNO closed database.
+I, [2013-09-17T21:59:51.723046 #2004]  INFO -- : QueryByAccessionNO 127.0.0.1,CRIS connect ok.
+I, [2013-09-17T21:59:51.723046 #2004]  INFO -- : select uni_key, chartno, examdate from cris_exam_online where uni_key='A11R4C02738' 
+I, [2013-09-17T21:59:51.754246 #2004]  INFO -- : QueryByAccessionNO closed database.
+I, [2013-09-17T21:59:53.022849 #2004]  INFO -- : OpenReportByAccessionNO 127.0.0.1,CRIS connect ok.
+I, [2013-09-17T21:59:53.022849 #2004]  INFO -- : select item6 from cris_exam_online where uni_key='A11R4C02738' 
+I, [2013-09-17T21:59:53.069649 #2004]  INFO -- : OpenReportByAccessionNO closed database.
+I, [2013-09-17T21:59:54.912254 #2004]  INFO -- : GetImageListByAccessionNO 127.0.0.1,CRIS connect ok.
+I, [2013-09-17T21:59:54.912254 #2004]  INFO -- : select filepath,filename from cris_images_reference where uni_key='A11R4C02738' 
+I, [2013-09-17T21:59:54.927854 #2004]  INFO -- : GetImageListByAccessionNO closed database.
