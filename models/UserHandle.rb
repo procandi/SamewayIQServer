@@ -30,6 +30,7 @@ class UserHandle
   attr_accessor:medsummary
   
   attr_accessor:userid
+  attr_accessor:userpassword
   attr_accessor:username
   
   attr_accessor:itemcode
@@ -38,6 +39,7 @@ class UserHandle
   attr_accessor:examtime
   attr_accessor:sfp
   attr_accessor:sfn
+  
   
 
   def initialize(db)
@@ -529,5 +531,28 @@ class UserHandle
     if @db::dbtype=="ORA"
       @db.dbh.commit()
     end
+  end
+  
+  
+  #get user verify is match or not
+  def GetUserVerifyResult(userid,userpassword)
+    @userid=userid
+    @userpassword=userpassword
+    sql="select "
+    sql+="* "
+    sql+="from "
+    sql+="cris_user "
+    sql+="where "
+    sql+="userid='#{@userid}' and "
+    sql+="password='#{@userpassword}' "
+    @logger.info(sql)
+    
+    flag=false
+    @db.dbh.select_all(sql){|rec|
+      flag=true
+      break
+    }    
+    
+    flag
   end
 end

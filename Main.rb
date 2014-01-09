@@ -18,7 +18,36 @@ else
 end
 
 
-class Main < Sinatra::Base 
+class Main < Sinatra::Base
+  #get user and password verify result by RESTful, and made result to JSON for request
+   get '/GetUserVerifyResult/:id/:password' do
+     begin      
+       #get parameter
+       id=params[:id]
+       password=params[:password]
+       
+       #setup logger
+       @logger=Logger.new("log.txt","daily")
+       
+       #connect to database
+       @db=DBHandle.new(SettingHandle::DBTYPE,SettingHandle::DBIP,SettingHandle::DBID,SettingHandle::DBPW,SettingHandle::DBSID)
+       @logger.info("GetImageListByAccessionNO #{SettingHandle::DBIP},#{SettingHandle::DBSID} connect ok.")
+       
+       #make user function
+       uh=UserHandle.new(@db)
+       
+       #get result
+       uh.GetUserVerifyResult(id,password).to_s()
+     rescue => e
+       @logger.debug("GetUserVerifyResult has crashed.") if @logger!=nil
+       @logger.debug(e) if @logger!=nil
+       'error'
+     ensure
+       @db.dbh.disconnect() if @db!=nil
+       @logger.info("GetUserVerifyResult closed database.") if @logger!=nil
+     end   
+   end
+  
   #query from database with AccessionNO by RESTful, and convert result to JSON for request
   get '/QueryByAccessionNO/:accessionno' do
     begin      
